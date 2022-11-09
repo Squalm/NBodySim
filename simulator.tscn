@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sim.gd" type="Script" id=1]
+
+[node name="simulator" type="Node2D"]
+script = ExtResource( 1 )
+G = 1.0
+n = 7
+t = 0.2
+steps = 20
+lims = 100
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
